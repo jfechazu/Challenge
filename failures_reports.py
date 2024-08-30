@@ -6,7 +6,7 @@ def get_customers_with_failures():
         # Conexión a la base de datos MySQL
         cnx = mysql.connector.connect(
             host='hostname',
-            user='user',  # Reemplaza con tu usuario de MySQL
+            user='username',  # Reemplaza con tu usuario de MySQL
             password='password',  # Reemplaza con tu contraseña de MySQL
             database='database'  # Reemplaza con el nombre de tu base de datos
         )
