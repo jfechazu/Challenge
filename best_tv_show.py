@@ -31,4 +31,4 @@ def bestInGenre(genre):
     print(best_show)
 
 if __name__ == "__main__":
-    bestInGenre("comedy")
+    bestInGenre("Action")
