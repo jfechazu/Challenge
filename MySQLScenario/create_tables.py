@@ -5,15 +5,15 @@ def Create_tables():
     # Conectar a MySQL
     try:
         cnx = mysql.connector.connect(
-            host='localhost',
-            user='brownsquid',  # Reemplaza con tu usuario de MySQL
-            password='123QAZwsx!'  # Reemplaza con tu contraseña de MySQL
+            host='hostname',
+            user='username',  # Reemplaza con tu usuario de MySQL
+            password='password!'  # Reemplaza con tu contraseña de MySQL
         )
         cursor = cnx.cursor()
         print("Conexión a MySQL exitosa.")
 
         # Conectar a la base de datos creada
-        cnx.database = 'MELIChallenge'
+        cnx.database = 'Database'
 
         # Lista de tablas a borrar
         tables_to_delete = ["events","campaigns","customers"]
