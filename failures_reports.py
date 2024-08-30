@@ -5,10 +5,10 @@ def get_customers_with_failures():
     try:
         # Conexión a la base de datos MySQL
         cnx = mysql.connector.connect(
-            host='localhost',
-            user='brownsquid',  # Reemplaza con tu usuario de MySQL
-            password='123QAZwsx!',  # Reemplaza con tu contraseña de MySQL
-            database='MELIChallenge'  # Reemplaza con el nombre de tu base de datos
+            host='hostname',
+            user='user',  # Reemplaza con tu usuario de MySQL
+            password='password',  # Reemplaza con tu contraseña de MySQL
+            database='database'  # Reemplaza con el nombre de tu base de datos
         )
         cursor = cnx.cursor()
 
