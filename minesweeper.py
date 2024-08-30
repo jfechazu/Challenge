@@ -1,9 +1,3 @@
-import sys
-
-def get_python_version():
-    python_version = sys.version
-    print(python_version)
-
 def minesweeper(board):
     rows = len(board)
     cols = len(board[0])
@@ -32,11 +26,10 @@ def minesweeper(board):
     
     
 if __name__ == "__main__":
-    #get_python_version()
     board = [
-    [0, 0, 0, 0],
     [1, 0, 1, 0],
-    [1, 1, 0, 1]
+    [0, 0, 1, 1],
+    [1, 1, 0, 0]
     ]
     result = minesweeper(board)
     for x in range (0,len(result)):
