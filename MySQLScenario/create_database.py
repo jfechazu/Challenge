@@ -5,16 +5,16 @@ def Create_database():
     # Conectar a MySQL
     try:
         cnx = mysql.connector.connect(
-            host='localhost',
-            user='brownsquid',  # Reemplaza con tu usuario de MySQL
-            password='123QAZwsx!'  # Reemplaza con tu contraseña de MySQL
+            host='hostname',
+            user='username',  # Reemplaza con tu usuario de MySQL
+            password='password!'  # Reemplaza con tu contraseña de MySQL
         )
         cursor = cnx.cursor()
         print("Conexión a MySQL exitosa.")
 
         # Crear base de datos
-        cursor.execute("CREATE DATABASE IF NOT EXISTS MELIChallenge")
-        print("Base de datos 'MELIChallenge' creada exitosamente.")
+        cursor.execute("CREATE DATABASE IF NOT EXISTS Database")
+        print("Base de datos 'Database' creada exitosamente.")
 
     except:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
